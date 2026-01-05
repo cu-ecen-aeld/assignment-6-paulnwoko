@@ -9,7 +9,7 @@ SRC_URI = "git://git@github.com/cu-ecen-aeld/assignments-3-and-later-paulnwoko.g
 
 PV = "1.0+git${SRCPV}"
 # TODO: set to reference a specific commit hash in your assignment repo.
-SRCREV = "ed3f09330c3cfbb9f56a992a7072c49f80bd0987"
+SRCREV = "8b16d4368a5f063cd0623243ddbd1a3f22a16631"
 #uncomment next line to make it pull latest commit automatically.
 #SRCREV = "${AUTOREV}"
 
