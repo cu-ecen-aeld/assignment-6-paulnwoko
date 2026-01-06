@@ -9,7 +9,7 @@ SRC_URI = "git://git@github.com/cu-ecen-aeld/assignments-3-and-later-paulnwoko.g
 
 PV = "1.0+git${SRCPV}"
 # TODO: set to reference a specific commit hash in your assignment repo.
-SRCREV = "8b16d4368a5f063cd0623243ddbd1a3f22a16631"
+SRCREV = "b615405cd5762bc1f2bb1007e99b876c5a7ec1f7"
 #uncomment next line to make it pull latest commit automatically.
 #SRCREV = "${AUTOREV}"
 
@@ -39,8 +39,9 @@ do_configure () {
 }
 
 do_compile () {
-	# Force use of cross-compiler
-	oe_runmake CC="${CC}" LDFLAGS="${LDFLAGS}"
+# Force use of cross-compiler
+#	oe_runmake CC="${CC}" LDFLAGS="${LDFLAGS}"
+	oe_runmake CC="${CC}" LDFLAGS="${LDFLAGS}" CFLAGS="${CFLAGS}"
 }
 
 do_install () {
